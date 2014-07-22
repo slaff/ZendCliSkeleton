@@ -40,6 +40,6 @@ Make sure to read the official documentation of zfcampus/zf-console
 (https://github.com/zfcampus/zf-console/blob/master/README.md) and check the following
 files for an example of creating a new command in your application.
 
-config/applicaiton.php --> to find an example of defining a new command
-src/Example.php --> to find an example of a command handler
+- config/applicaiton.php --> to find an example of defining a new command
+- src/Example.php --> to find an example of a command handler
  
