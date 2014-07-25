@@ -14,10 +14,12 @@ Installation
 ------------
 Run composer install to get all dependant packages. 
 If you do not know what composer is then:
-1. Download the latest composer.phar file from https://getcomposer.org/composer.phar and save it 
+* Download the latest composer.phar file from https://getcomposer.org/composer.phar and save it 
 to the same directory as the README.md file directory.
-2. Run the following command:
+* Run the following command:
+```
 php composer.phar install
+```
 
 Usage
 -----
@@ -43,7 +45,7 @@ files for an example of creating a new command in your application.
 - config/application.php --> to find an example of defining a new command
 - src/Example.php --> to find an example of a command handler
 
-You application as single file
+Your application as single file
 --------------------------------
 If you want to distribute your command line application and make it easier for 
 your users then you can give them one stand-alone file to run with
