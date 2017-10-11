@@ -1,5 +1,6 @@
 <?php
-namespace Cli;
+
+namespace ZendCliSkeleton;
 
 use Zend\Console\Adapter\AdapterInterface as Console;
 use ZF\Console\Route;
