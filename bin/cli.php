@@ -7,16 +7,31 @@
 
 use Zend\Console\Console;
 use ZF\Console\Application;
+use ZF\Console\Dispatcher;
 
-include_once __DIR__.'/../init_autoloader.php';
+if (!file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    throw new Exception(
+        'Composer autoload script not found. Run \'composer install\''
+    );
+}
+
+require_once __DIR__.'/../vendor/autoload.php';
 
 $config = include __DIR__ . '/../config/application.php';
+
+/**
+ * You can inject a ServiceManager container into the dispatcher to use for
+ * finding declared handlers
+ */
+$dispatcher = new Dispatcher();
 
 $application = new Application(
     $config['name'],
     $config['version'],
     $config['routes'],
-    Console::getInstance()
+    Console::getInstance(),
+    $dispatcher
 );
+
 $exit = $application->run();
 exit($exit);
