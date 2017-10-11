@@ -28,7 +28,7 @@ $dispatcher = new Dispatcher();
 $application = new Application(
     $config['name'],
     $config['version'],
-    $config['routes'],
+    include __DIR__ .'/../config/routes.php',
     Console::getInstance(),
     $dispatcher
 );
