@@ -1,25 +1,36 @@
 {
-  "name" : "slk/zend-cli-skeleton",
-  "description" : "Zend Framework Sekeleton for creating command line applications",
-  "version" : "0.1",
-  "require" : {
-    "php": ">=5.3.3",
-    "zfcampus/zf-console" : ">=1.0.2",
-    "zendframework/zend-filter": "~2.0" 
+  "name": "slk/zend-cli-skeleton",
+  "description": "Zend Framework Skeleton for creating command line applications",
+  "version": "0.1",
+  "require": {
+    "php": ">=5.6",
+    "zfcampus/zf-console": "^1.0",
+    "zendframework/zend-filter": "^2.0"
   },
-  "authors" : [ {
-    "name" : "Slavey Karadzhov",
-    "email" : "slaff@linux-bg.org",
-    "homepage" : "http://learnzf2.com"
-  } ],
-  "repositories" : [ {
-    "type" : "composer",
-    "url" : "https://packagist.org/"
-  } ],
-  "bin" : [ "bin/cli.php" ],
-  "autoload" : {
-    "psr-4" : {
-      "Cli\\" : "src/"
+  "authors": [
+    {
+      "name": "Slavey Karadzhov",
+      "email": "slaff@linux-bg.org",
+      "homepage": "http://learnzf2.com"
+    },
+    {
+      "name": "Curtis Kelsey",
+      "email": "curtis.kelsey@gmail.com",
+      "homepage": "http://curtiskelsey.info"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.org/"
+    }
+  ],
+  "bin": [
+    "bin/cli.php"
+  ],
+  "autoload": {
+    "psr-4": {
+      "ZendCliSkeleton\\": "src/"
     }
   }
 }
